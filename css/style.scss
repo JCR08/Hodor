@@ -1,0 +1,268 @@
+$dark-cyan: #106db3;
+$dark-gray: #969da2;
+$dark-slate-gray: #2f546e;
+$dim-gray: #5e686f;
+$light-steel-blue: #bfcad3;
+$midnight-blue: #083451;
+$steel-blue: #3a85bf;
+$white: #FFF;
+
+@mixin centered-flex {
+  align-items: center;
+  display: flex;
+}
+
+// COLORS
+.light-steel-blue {
+  color: $light-steel-blue;
+}
+
+.steel-blue {
+  color: $steel-blue;
+}
+
+// SPACING
+
+.no-padding {
+  padding: 0;
+}
+
+// HTML BASED
+
+body {
+  font-family: arial;
+
+  h2 {
+    color: $dark-slate-gray;
+    font-family: "Arial Narrow";
+    font-size: 7rem;
+    letter-spacing: -2px;
+  }
+
+  header {
+    background-color: $midnight-blue;
+    background-image: url('../images/header.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: $midnight-blue;
+    height: 500px;
+    position: relative;
+
+    a {
+      color: $midnight-blue;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .logo-and-name {
+      @include centered-flex;
+      margin-top: .5rem;
+
+      img.direwolf-logo {
+        width: 5%;
+      }
+
+      .pull-right {
+        @include centered-flex;
+        margin-left: auto;
+        margin-right: 0;
+
+        div {
+          padding: 0 .5rem;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding-left: .5rem;
+      }
+    }
+
+    .heading-title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25%;
+
+      h1 {
+        color: $white;
+        font-size: 10rem;
+        margin: 0;
+      }
+    }
+  }
+
+  main {
+    border-bottom: 1px solid $dark-gray;
+    color: $dark-gray;
+
+    section.main-content {
+
+      .buttons {
+        @include centered-flex;
+
+        div {
+          @include centered-flex;
+          height: 30px;
+
+          &:hover {
+
+            img {
+              background-color: $midnight-blue;
+            }
+
+            p {
+              background-color: $dark-cyan;
+            }
+          }
+
+          img {
+            background-color: $dim-gray;
+            height: 100%;
+            padding: 5px 10px;
+            width: auto;
+          }
+
+          p {
+            background-color: $dark-gray;
+            color: $white;
+            height: 100%;
+            margin: 0;
+            padding: 5px 10px;
+          }
+        }
+
+        div:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+
+      .byline {
+        @include centered-flex;
+        margin-bottom: 30px;
+
+        p {
+          margin: 0 10px;
+        }
+
+        img {
+          height: auto;
+          width: 5%;
+        }
+      }
+    }
+
+    aside {
+      margin-top: 25px;
+
+      div {
+        margin-bottom: 35px;
+      }
+
+      div.aside-byline {
+
+        img {
+          width: 50%;
+        }
+      }
+
+      div.social {
+        @include centered-flex;
+
+        div {
+          margin-bottom: 10px;
+        }
+
+        p {
+          width: 33%;
+        }
+      }
+
+      .aside-ad {
+
+        div.ad-img {
+          background-color: $midnight-blue;
+
+          img {
+            width: 100%;
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $midnight-blue;
+
+    section.most-popular {
+      padding: 0;
+
+      h2 {
+        background-color: $white;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+      }
+
+      div.other-posts {
+        background-color: $steel-blue;
+        display: flex;
+
+        div {
+          position: relative;
+          width: 25%;
+
+          img {
+            opacity: .5;
+            width: 100%;
+            z-index: 1;
+          }
+
+          p{
+            bottom: 1rem;
+            color: $midnight-blue;
+            font-family: "Arial Narrow";
+            font-size: 3rem;
+            margin: 0;
+            padding-left: 10px;
+            position: absolute;
+            z-index: 2;
+          }
+        }
+
+        div:hover {
+
+          img{
+            opacity: 1;
+          }
+
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    section.container {
+      @include centered-flex;
+      height: 100px;
+
+      p {
+        color: $dark-gray;
+        margin: 0;
+        padding: 0 15px;
+      }
+
+      ul {
+        margin: 0 0 0 auto;
+
+        li a {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}
