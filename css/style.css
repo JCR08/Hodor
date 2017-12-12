@@ -1,25 +1,19 @@
-/* line 16, style.scss */
 .light-steel-blue {
   color: #bfcad3; }
 
-/* line 20, style.scss */
 .steel-blue {
   color: #3a85bf; }
 
-/* line 26, style.scss */
 .no-padding {
   padding: 0; }
 
-/* line 32, style.scss */
 body {
   font-family: arial; }
-  /* line 35, style.scss */
   body h2 {
     color: #2f546e;
     font-family: "Arial Narrow";
     font-size: 7rem;
     letter-spacing: -2px; }
-  /* line 42, style.scss */
   body header {
     background-color: #083451;
     background-image: url("../images/header.jpg");
@@ -28,143 +22,115 @@ body {
     color: #083451;
     height: 500px;
     position: relative; }
-    /* line 51, style.scss */
     body header a {
       color: #083451; }
-      /* line 54, style.scss */
       body header a:hover {
         text-decoration: none; }
-    /* line 59, style.scss */
     body header .logo-and-name {
       align-items: center;
       display: flex;
       margin-top: .5rem; }
-      /* line 63, style.scss */
       body header .logo-and-name img.direwolf-logo {
         width: 5%; }
-      /* line 67, style.scss */
       body header .logo-and-name .pull-right {
         align-items: center;
         display: flex;
         margin-left: auto;
         margin-right: 0; }
-        /* line 72, style.scss */
         body header .logo-and-name .pull-right div {
           padding: 0 .5rem; }
-      /* line 77, style.scss */
       body header .logo-and-name p {
         margin: 0;
         padding-left: .5rem; }
-    /* line 83, style.scss */
     body header .heading-title {
       position: absolute;
       left: 0;
       right: 0;
       top: 25%; }
-      /* line 89, style.scss */
       body header .heading-title h1 {
         color: #FFF;
         font-size: 10rem;
         margin: 0; }
-  /* line 97, style.scss */
+  @media (max-width: 992px) {
+    body h2 {
+      font-size: 2rem; }
+    body header {
+      height: 200px; }
+      body header .heading-title h1 {
+        font-size: 3rem; } }
   body main {
     border-bottom: 1px solid #969da2;
     color: #969da2; }
-    /* line 103, style.scss */
     body main section.main-content .buttons {
       align-items: center;
       display: flex; }
-      /* line 106, style.scss */
       body main section.main-content .buttons div {
         align-items: center;
         display: flex;
         height: 30px; }
-        /* line 112, style.scss */
         body main section.main-content .buttons div:hover img {
           background-color: #083451; }
-        /* line 116, style.scss */
         body main section.main-content .buttons div:hover p {
           background-color: #106db3; }
-        /* line 121, style.scss */
         body main section.main-content .buttons div img {
           background-color: #5e686f;
           height: 100%;
           padding: 5px 10px;
           width: auto; }
-        /* line 128, style.scss */
         body main section.main-content .buttons div p {
           background-color: #969da2;
           color: #FFF;
           height: 100%;
           margin: 0;
           padding: 5px 10px; }
-      /* line 137, style.scss */
       body main section.main-content .buttons div:not(:first-child) {
         margin-left: 10px; }
-    /* line 142, style.scss */
     body main section.main-content .byline {
       align-items: center;
       display: flex;
       margin-bottom: 30px; }
-      /* line 146, style.scss */
       body main section.main-content .byline p {
         margin: 0 10px; }
-      /* line 150, style.scss */
       body main section.main-content .byline img {
         height: auto;
         width: 5%; }
-    /* line 157, style.scss */
     body main aside {
       margin-top: 25px; }
-      /* line 160, style.scss */
       body main aside div {
         margin-bottom: 35px; }
-      /* line 166, style.scss */
       body main aside div.aside-byline img {
         width: 50%; }
-      /* line 171, style.scss */
       body main aside div.social {
         align-items: center;
         display: flex; }
-        /* line 174, style.scss */
         body main aside div.social div {
           margin-bottom: 10px; }
-        /* line 178, style.scss */
         body main aside div.social p {
           width: 33%; }
-      /* line 185, style.scss */
       body main aside .aside-ad div.ad-img {
         background-color: #083451; }
-        /* line 188, style.scss */
         body main aside .aside-ad div.ad-img img {
           width: 100%;
           opacity: .5; }
-  /* line 197, style.scss */
   body footer {
     background-color: #083451; }
-    /* line 200, style.scss */
     body footer section.most-popular {
       padding: 0; }
-      /* line 203, style.scss */
       body footer section.most-popular h2 {
         background-color: #FFF;
         margin: 0 auto;
         padding: 15px;
         text-align: center; }
-      /* line 210, style.scss */
       body footer section.most-popular div.other-posts {
         background-color: #3a85bf;
         display: flex; }
-        /* line 214, style.scss */
         body footer section.most-popular div.other-posts div {
           position: relative;
           width: 25%; }
-          /* line 218, style.scss */
           body footer section.most-popular div.other-posts div img {
             opacity: .5;
             width: 100%;
             z-index: 1; }
-          /* line 224, style.scss */
           body footer section.most-popular div.other-posts div p {
             bottom: 1rem;
             color: #083451;
@@ -174,26 +140,23 @@ body {
             padding-left: 10px;
             position: absolute;
             z-index: 2; }
-        /* line 238, style.scss */
+          @media (max-width: 992px) {
+            body footer section.most-popular div.other-posts div p {
+              font-size: 1.25rem; } }
         body footer section.most-popular div.other-posts div:hover img {
           opacity: 1; }
-        /* line 242, style.scss */
         body footer section.most-popular div.other-posts div:hover p {
           color: #FFF; }
-    /* line 249, style.scss */
     body footer section.container {
       align-items: center;
       display: flex;
       height: 100px; }
-      /* line 253, style.scss */
       body footer section.container p {
         color: #969da2;
         margin: 0;
         padding: 0 15px; }
-      /* line 259, style.scss */
       body footer section.container ul {
         margin: 0 0 0 auto; }
-        /* line 262, style.scss */
         body footer section.container ul li a {
           color: #969da2; }
 

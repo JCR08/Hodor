@@ -94,6 +94,22 @@ body {
     }
   }
 
+  @media (max-width: 992px){
+    h2 {
+      font-size: 2rem;
+    }
+    header {
+      height: 200px;
+
+      .heading-title {
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
   main {
     border-bottom: 1px solid $dark-gray;
     color: $dark-gray;
@@ -230,6 +246,11 @@ body {
             padding-left: 10px;
             position: absolute;
             z-index: 2;
+          }
+          @media (max-width: 992px){
+            p {
+              font-size: 1.25rem;
+            }
           }
         }
 
