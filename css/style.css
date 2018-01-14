@@ -59,7 +59,6 @@ body {
       body header .heading-title h1 {
         font-size: 3rem; } }
   body main {
-    border-bottom: 1px solid #969da2;
     color: #969da2; }
     body main section.main-content .buttons {
       align-items: center;
